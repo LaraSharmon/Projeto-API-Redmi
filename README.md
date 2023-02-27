@@ -2,9 +2,9 @@
 
 
 
-# [ API ] Estúdio de Tatuagem 
+# [ API ] Clínica de Fisioterapia
 ### 📑 Descrição
-Desenvolvimento da <em>**API REST**</em> no **padrão MVC** que retorna informações das entidades de um estúdio de tatuagem e efetua todas as operações **CRUD**: ``tatuador``, ``cliente``, ``agendamento``, ``materiais``.
+Desenvolvimento da <em>**API REST**</em> no **padrão MVC** que retorna informações das entidades de um estúdio de tatuagem e efetua todas as operações **CRUD**: ``Fisioterapeuta``, ``Pacientes``, ``Agendamento``, ``Equipamentos``.
 
 
 
@@ -26,32 +26,32 @@ Desenvolvimento da <em>**API REST**</em> no **padrão MVC** que retorna informa�
 ```
 src/
 ├─ controllers/
-│  ├─ TatuadorController.js
-│  ├─ ClienteController.js
-│  ├─ MateriaisController.js
-│  └─ AgendamentoController.js
+│  ├─ FisioterapeutaController.js
+│  ├─ PacientesController.js
+│  ├─ AgendamentoController.js
+│  └─ EquipamentosController.js
 ├─ dao/
-│  ├─ TatuadorDAO.js
-│  ├─ ClienteDAO.js
-│  ├─ MateriaisDAO.js
-│  └─ AgendamentoDAO.js
+│  ├─ FisioterapeutaDAO.js
+│  ├─ PacientesDAO.js
+│  ├─ AgendamentoDAO.js
+│  └─ EquipamentosDAO.js
 ├─ models/
-│  ├─ Tatuador.js
-│  ├─ Cliente.js
-│  ├─ Materiais.js
-│  └─ Agendamento.js
+│  ├─ Fisioterapeuta.js
+│  ├─ Pacientes.js
+│  ├─ Agendamento.js
+│  └─ Equipamentos.js
 ├─ database/
 │  ├─ create-and-populate.js
 │  ├─ config.js
 │  └─ database.db
 ├─ routes/
-│  ├─ tatuador.js
-│  ├─ cliente.js
-│  ├─ materiais.js
-│  └─ agendamento.js
+│  ├─ fisioterapeuta.js
+│  ├─ pacientes.js
+│  ├─ agendamento.js
+│  └─ euipamentos.js
 └─ main.js
 ```
-  
+
 </details>
 
 
@@ -70,7 +70,7 @@ src/
 $ git clone https://github.com/LaraSharmon/Projeto-API-Redmi.git
 
 # Acesse a pasta do projeto no terminal/cmd
-$ cd tattooApi
+$ cd clínicaApi
 
 # Instale as dependências
 $ npm install
@@ -84,36 +84,26 @@ $ <http://localhost:6020>
 
 ## Rotas CRUD
 
-### [ 1 ] <em>Tatuador</em>
+### [ 1 ] <em>Fisioterapeuta</em>
 
 | Método | Rota | Descrição |
 | ------ | ----- | ----------- |
-| **`GET`** | **/tatuadores** | Retorna todos os tatuadores. |
-|  **`GET`** | **/tatuador/id** | Retorna um tatuador. |
-|  **`POST`** | **/tatuador** | Cria um novo tatuador.  |
-|  **`PUT`** | **/tatuador/id** | Altera os dados do tatuador.
-|  **`DELETE`** | **/tatuador/id** | Remove o tatuador.
+| **`GET`** | **/fisioterapeutas** | Retorna todos os fisioterapeutas. |
+|  **`GET`** | **/fisioterapeuta/id** | Retorna um fisioterapeuta. |
+|  **`POST`** | **/fisioterapeuta** | Cria um novo fisioterapeuta.  |
+|  **`PUT`** | **/fisioterapeuta/id** | Altera os dados do fisioterapeuta.
+|  **`DELETE`** | **/fisioterapeuta/id** | Remove o fisioterapeuta.
   
-### [ 2 ] <em>Clientes</em>
+### [ 2 ] <em>Pacientes</em>
 
 | Método | Rota | Descrição |
 | ------ | ----- | ----------- |
-|  **`GET`** | **/clients** | Retorna todos os clientes. |
-|  **`GET`** | **/clients/id** | Retorna um cliente. |
-|  **`POST`** | **/clients** | Cria um novo cliente.  |
-|  **`PUT`** | **/clients/id** | Altera os dados do cliente.
-|  **`DELETE`** | **/clients/id** | Remove o cliente.
+|  **`GET`** | **/pacientes** | Retorna todos os Pacientes. |
+|  **`GET`** | **/paciente/id** | Retorna um Paciente. |
+|  **`POST`** | **/paciente** | Cria um novo Paciente.  |
+|  **`PUT`** | **/paciente/id** | Altera os dados do Paciente.
+|  **`DELETE`** | **/paciente/id** | Remove o Paciente.
   
-
-### [ 2 ] <em>Materiais</em>
-
-| Método | Rota | Descrição |
-| ------ | ----- | ----------- |
-|  **`GET`** | **/materiais** | Retorna todos os materiais. |
-|  **`GET`** | **/materiais/id** |  Retorna um material. |
-|  **`POST`** | **/materiais** | Cria um novo material.  |
-|  **`PUT`** | **/materiais/id** | Altera os dados do material.
-|  **`DELETE`** | **/materiais/id** | Remove o material.
   
 ### [ 2 ] <em>Agendamento</em>
 
@@ -124,3 +114,16 @@ $ <http://localhost:6020>
 |  **`POST`** | **/agendamento** | Cria um novo agendamento.  |
 |  **`PUT`** | **/agendamento/id** | Altera os dados do agendamento.
 |  **`DELETE`** | **/agendamento/id** | Remove o agendamento.
+
+
+### [ 2 ] <em>Equipamentos</em>
+
+| Método | Rota | Descrição |
+| ------ | ----- | ----------- |
+|  **`GET`** | **/equipamentos** | Retorna todos os equipamentos. |
+|  **`GET`** | **/equipamento/id** |  Retorna um equipamento. |
+|  **`POST`** | **/equipamento** | Cria um novo mequipamento.  |
+|  **`PUT`** | **/equipamento/id** | Altera os dados do equipamento.
+|  **`DELETE`** | **/equipamento/id** | Remove o equipamento.
+  
+
