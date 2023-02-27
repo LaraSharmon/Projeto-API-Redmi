@@ -79,7 +79,7 @@ $ npm install
 $ npm start
 
 # Acesse o servidor
-$ <http://localhost:4000>
+$ <http://localhost:6020>
 ```
 
 ## Rotas CRUD
