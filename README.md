@@ -1,5 +1,7 @@
 # Projeto individual Módulo 5
 
+
+
 # [ API ] Estúdio de Tatuagem 
 ### 📑 Descrição
 Desenvolvimento da <em>**API REST**</em> no **padrão MVC** que retorna informações das entidades de um estúdio de tatuagem e efetua todas as operações **CRUD**: ``tatuador``, ``cliente``, ``agendamento``, ``materiais``.
@@ -65,7 +67,7 @@ src/
 
 ```bash
 # Clone o repositório
-$ git clone https://github.com/Theusduarte123/-API-estudio-de-Tatooh.git
+$ git clone https://github.com/LaraSharmon/Projeto-API-Redmi.git
 
 # Acesse a pasta do projeto no terminal/cmd
 $ cd tattooApi
